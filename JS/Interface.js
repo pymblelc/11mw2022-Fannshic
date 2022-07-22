@@ -58,6 +58,10 @@ const happinesssongs = ["gsdgds", "sagfs", "hjkhk", "jkhu", "esgre", "fgsdbfsd",
 const neutralsongs = ["gfdagag", "fdsgf", "gfsga", "gfdsgdf", "dsgd", "dgsgfd", "dsgfd"];
 const sadnesssongs = ["gfsdgfds", "fsdgfd", "sgfd", "sgfds", "fdsgf", "sgfds", "fdxgdfb"];
 
+function randomNumber(max) {
+    return Math.floor(Math.random() * max);
+}
+
 //so that they are randomly generated ---
 const random1 = Math.floor(Math.random() * angersongs.length);
 const random2 = Math.floor(Math.random() * contemptsongs.length);
@@ -88,35 +92,56 @@ myBtn.addEventListener("click", function () {
                 let sadness = data[w].faceAttributes.sadness;
                 let surprise = data[w].faceAttributes.surprise;
 
-                // document.getElementById("MyText").innerHTML = age;
-                // if (age => 15) {
-                //     document.getElementById("MyText").innerHTML = "33"
-                // }
-                // if (happiness > 0.5) {
-                //     songs = "The customer doesn't look very angry, "
-                // }
-
-                if (happiness => 0.5 ) {
-                    console.log("song happy")
-                    console.log(random, angersongs[random1]);
+                //Generate
+                //anger
+                if (anger => 0.5 ) {
+                    console.log("angery")
                     songs.innerHTML = 
-                    (random, happinesssongs[random1]) 
-                    + (random, happinesssongs[random1]) 
+                    (random, angersongs[random2]) 
+                    + (random, angersongs[random5]) 
+                    + (random, angersongs[random1]) 
+                    + (random, angersongs[random1])
+                    + (random, angersongs[random1])
+                    + (random, angersongs[random1])
+                    + (random, angersongs[random1]);
+                }
+                if (anger => 0.2 ) {
+                    console.log("less angery");
+                    songs.innerHTML = 
+                    (random, angersongs[random1]) 
+                    + (random, angersongs[random1]);
+                }
+                else {
+                    console.log("not angery")
+                }
+                //contempt
+                //disguest
+                //fear
+                // happy
+                if (happiness => 0.5 ) {
+                    console.log("happy")
+                    songs.innerHTML = 
+                    (random, happinesssongs[random2]) 
+                    + (random, happinesssongs[random5]) 
                     + (random, happinesssongs[random1]) 
                     + (random, happinesssongs[random1])
                     + (random, happinesssongs[random1])
                     + (random, happinesssongs[random1])
                     + (random, happinesssongs[random1]);
-    
                 }
                 if (happiness => 0.2 ) {
-                    console.log("song less happy")
-                    console.log(random, angersongs[random1]);
+                    console.log("less happy");
                     songs.innerHTML = 
                     (random, angersongs[random1]) 
                     + (random, angersongs[random1]);
                 }
-                else
+                else {
+                    console.log("not happy")
+                }
+                //neutral
+                //sadness
+                //surprise
+
 
                 // if (happiness < 0.5 ) {
                 //     console.log("song change")
