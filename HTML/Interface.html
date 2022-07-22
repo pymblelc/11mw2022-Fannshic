@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<!-- Elfin, a song recommendation app/web -->
+
+<head>
+    <link rel="stylesheet" href="../CSS/Interface.css">
+    <script src="../JS/ai.js" defer></script>
+    <script src="../JS/Interface.js" defer></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="Header">
+        <div class="Head">
+            <div id="Name">
+                <h2> ELFIN </h2>
+            </div>
+            <h2></h2>
+            <div class="GButtons" width="320" height="240">
+                <a href="Interface.html">
+                    <button id="btnHome">
+                        <p>Home</p>
+                    </button>
+                </a>
+                <a href="Playlist.html">
+                    <button id="btnPlaylists">
+                        <p>Playlist</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <div class="Intro">
+        <p>
+            Elfin give a playist of recommneted songs by analysing your emtions and how you feel at the time based on a
+            photo.
+            To be able to do this, please give us to access your webcam.
+        </p>
+    </div>
+    <!-- cam -->
+    <div class="Webcam">
+        <video id="Cam" width="320" height="240" autoplay></video>
+        <canvas id="Photo" width="320" height="240"></canvas>
+    </div>
+    <div class="PButtons">
+        <button id="btnStart">
+            <p>Start Cam</p>
+        </button>
+        <button id="btnPhoto">
+            <p>Take Photo</p>
+        </button>
+        <button id="btnGenerate">
+            <p>Generate</p>
+        </button>
+        <!-- <p><input type="button" value="Analyse" id="btnAnalyse"></p> -->
+    </div>
+    <!-- Playlist - Backup -->
+    <!-- The list -->
+    <div class="Playlist">
+        <div id="Tittle">
+            <p> Playlist</p>
+        </div>
+        <div id="Songs">
+            <p> Nothing is generated yet </p>
+            <!-- <p> Nothing is generated yet </p>
+            <p> Nothing is generated yet </p>
+            <p> Nothing is generated yet </p>
+            <p> Nothing is generated yet </p>
+            <p> Nothing is generated yet </p>
+            <p> Nothing is generated yet </p>
+            <p> Nothing is generated yet </p> -->
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- style="display: none"; -->
