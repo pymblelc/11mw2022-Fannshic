@@ -93,6 +93,8 @@ myBtn.addEventListener("click", function () {
                 let surprise = data[w].faceAttributes.surprise;
 
                 //Generate
+                //i couldn't figure out how randome thing works
+                //sorry josh
                 //anger
                 if (anger => 0.5 ) {
                     console.log("angery")
@@ -114,10 +116,29 @@ myBtn.addEventListener("click", function () {
                 else {
                     console.log("not angery")
                 }
-                //contempt
                 //disguest
+                if (anger => 0.5 ) {
+                    console.log("angery")
+                    songs.innerHTML = 
+                    (random, angersongs[random2]) 
+                    + (random, angersongs[random5]) 
+                    + (random, angersongs[random1]) 
+                    + (random, angersongs[random1])
+                    + (random, angersongs[random1])
+                    + (random, angersongs[random1])
+                    + (random, angersongs[random1]);
+                }
+                if (anger => 0.2 ) {
+                    console.log("less angery");
+                    songs.innerHTML = 
+                    (random, angersongs[random1]) 
+                    + (random, angersongs[random1]);
+                }
+                else {
+                    console.log("not angery")
+                }
                 //fear
-                // happy
+                // happy 
                 if (happiness => 0.5 ) {
                     console.log("happy")
                     songs.innerHTML = 
@@ -143,13 +164,6 @@ myBtn.addEventListener("click", function () {
                 //surprise
 
 
-                // if (happiness < 0.5 ) {
-                //     console.log("song change")
-                //     console.log(random1, angersongs[random1]);
-                //     console.log(random1, angersongs[random1]);
-                //     //document.getElementById("Songs") = "fdafdsfd";
-                // }
-                
 
                 
                 photoBtn.style.display = "";
